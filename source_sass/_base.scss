@@ -1,1 +1,10 @@
 // Add any custom Sass & CSS here
+
+#gallery {
+	input[type="radio"] {
+	-webkit-appearance: none;
+	}
+	input[type="radio"]:checked+label{
+		background-color:black;
+	}
+}

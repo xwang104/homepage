@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="small-12 large-6 large-centered columns">
+    <input type="search" placeholder="Search for movies" ng-model="searchInput"></input>
+    <p class="text-left"> Sort By </p>
+    <select ng-model="sortBy" ng-options="sortBy as sortBy.title for sortBy in sortBys"></select>
+    <input type="radio", ng-model="reverse", ng-value="false"> ascending</input>
+    <input type="radio", ng-model="reverse", ng-value="true"> descending</input>
+    <!--div>{{sortBy}}, {{reverse}}</div-->
+    <div>
+      <ul>
+      	<li ng-repeat="movie in data | filter:searchInput | orderBy:sortBy.key:reverse" ng-hide="searchInput.length == 0"><img ng-src="./data/images/{{movie.imdbID}}.jpg"/>{{movie.title}}, {{movie.rank}}</li>
+      </ul>
+    </div>
+
+
+  </div>
+
+</div>
