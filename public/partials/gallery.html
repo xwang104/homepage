@@ -1,10 +1,15 @@
 <div class="row" id="gallery">
   <div class="small-12 large-10 large-centered columns">
   	<div class="stacked-for-small button-group">
-  	  <input type="radio" name="genre" value="all" id="all"><label class="button" for="all">All</label>
-  	  <input type="radio" name="genre" value="action" id="action"><label class="button" for="action">Action</label>
-
+  	  <label class="button" for="all"><input type="radio" ng-model="select.selectGenre" ng-value="" id="all"><span>All</span></label>
+  	  <label class="button" ng-repeat="genre in genres" for="{{genre}}">
+        <input type="radio" ng-model="select.selectGenre" ng-value="genre" id="{{genre}}" name="selectGenre">
+        <span>{{genre}}</span>
+      </label>
   	</div>
+    <!--div> {{select.selectGenre}}</div-->
+  	<div class="row small-up-2 medium-up-5 large-up-7">
+  	  <div class="column poster" ng-repeat="movie in data | filter: select.selectGenre"><a href="#details/{{movie.rank}}"><img ng-src="./data/images/{{movie.imdbID}}.jpg"/></a></div>
   <div>
 
 </div>

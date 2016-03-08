@@ -21,3 +21,15 @@ app.config(function ($routeProvider) {
 			redirectTo: '/list'
 		});
 });
+
+app.factory('movieFactory', function movieFactory($http) {
+	var exports = {};
+	exports.getMovies = function() {
+		return $http.get('./data/imdb250.json')
+			.error(function(data) {
+				console.log('There was an error', data);
+			});
+	};
+	return exports;
+
+});

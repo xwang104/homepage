@@ -1,10 +1,113 @@
 // Add any custom Sass & CSS here
 
+header {
+	h1 {
+		color: #092337;
+	}
+	padding: 5%;
+	div {
+		margin-top: 3%;
+	}
+	a {
+		padding: 5%;
+		font-size: 1.3em;
+	}
+}
+
+#list {
+	#menu {
+		padding: 5%;
+		background-color: #5F9EB3;
+		label {
+			font-size: 1.1em;
+			padding: 2% 2% 0 2%;
+		}
+	}
+	ul {
+		list-style-type: none;
+		margin-left: 0;
+		li {
+			padding: 3%;
+			width: 100%;
+			margin: 0 auto;
+			border-bottom: 1px dotted black;
+			background-color: #D5E0E4;
+			img {
+				height: 180px;
+				width: auto;
+			}
+			.title {
+				margin-top: 5%;
+				color: #000;
+				font-size: 1.3em;
+			}
+			.rank {
+				color: #000;
+				font-size: 1em;
+			}
+			&:hover {
+				background-color: #5F9EB3;
+				width: 110%;
+				margin-left: -5%;
+				img {
+					height: 200px;
+				}
+			}
+		}
+	}
+}
+
 #gallery {
 	input[type="radio"] {
 	-webkit-appearance: none;
 	}
-	input[type="radio"]:checked+label{
-		background-color:black;
+	input[type="radio"]:checked + span {
+		color:black;
+		font-weight: 500;
+	}
+	.poster {
+		height: 220px
+	}
+	img{
+		width: 105px;
+		height: auto;
+		&:hover {
+			width: 135px;
+		}
 	}
 }
+
+#details {
+	background-color: #D5E0E4;
+	padding: 3% 5% 5% 5%;
+	margin-bottom: 10%;
+	.arrow {
+		background-color: #5F9EB3;
+		&:hover {
+			background-color: #092337; 
+		}
+		a {
+			color: white;
+			font-size: 1.5em;
+		}
+	}
+	.title {
+		margin-top: 5%;
+		font-size: 1.8em;
+	}
+	.rank {
+		font-size: 1.3em;
+		margin: 3%;
+	}
+	#more {
+		color: white;
+		margin-top: 5%;
+		.plot {
+			font-size: 1.1em;
+			color: #000;
+		}
+	}
+}
+
+
+

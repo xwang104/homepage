@@ -1,14 +1,27 @@
-<div class="row">
-  <div class="small-12 large-6 large-centered columns">
-    <input type="search" placeholder="Search for movies" ng-model="searchInput"></input>
-    <p class="text-left"> Sort By </p>
-    <select ng-model="sortBy" ng-options="sortBy as sortBy.title for sortBy in sortBys"></select>
-    <input type="radio", ng-model="reverse", ng-value="false"> ascending</input>
-    <input type="radio", ng-model="reverse", ng-value="true"> descending</input>
-    <!--div>{{sortBy}}, {{reverse}}</div-->
+<div class="row" id="list">
+  <div class="small-12 large-8 large-centered columns">
+  	<div id="menu">
+	    <input type="search" placeholder="Search for movies" ng-model="searchInput"></input>
+	    <p class="text-left"> Sort By: </p>
+	    <select ng-model="sortBy" ng-options="sortBy as sortBy.title for sortBy in sortBys"></select>
+	    <input type="radio", ng-model="reverse", ng-value="false" id="ascending"> <label for="ascending"> ascending </label>
+	    <input type="radio", ng-model="reverse", ng-value="true" id="descending"> <label for="descending"> descending </label>
+	    <!--div>{{sortBy}}, {{reverse}}</div-->
+	</div>
+
+
+
     <div>
-      <ul>
-      	<li ng-repeat="movie in data | filter:searchInput | orderBy:sortBy.key:reverse" ng-hide="searchInput.length == 0"><img ng-src="./data/images/{{movie.imdbID}}.jpg"/>{{movie.title}}, {{movie.rank}}</li>
+      <ul class="text-left">
+      	<li class="row" ng-mouseover="alert('here')" ng-repeat="movie in data | filter:searchInput | orderBy:sortBy.key:reverse">
+      	  <a href="#details/{{movie.rank}}">
+      	  	<img class="small-12 medium-4 columns" ng-src="./data/images/{{movie.imdbID}}.jpg"/>
+      	  	<div class="small-12 medium-8 columns">
+      	  	  <p class="title">{{movie.title}}</p>
+      	  	  <p class="rank">Rank: {{movie.rank}}</p>
+      	  	</div>
+      	  </a>
+      	</li>
       </ul>
     </div>
 
