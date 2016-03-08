@@ -13,7 +13,7 @@ app.controller('listCtrl', function($scope, movieFactory) {
 			key: 'rank',
 		}
 		];
-	$scope.sortBy = $scope.sortBys[1];
+	$scope.sortBy = $scope.sortBys[0];
     $scope.reverse = false;
 
 

@@ -13,7 +13,7 @@
 
     <div>
       <ul class="text-left">
-      	<li class="row" ng-mouseover="alert('here')" ng-repeat="movie in data | filter:searchInput | orderBy:sortBy.key:reverse">
+      	<li class="row" ng-repeat="movie in data | filter:searchInput | orderBy:sortBy.key:reverse" ng-show="searchInput.length">
       	  <a href="#details/{{movie.rank}}">
       	  	<img class="small-12 medium-4 columns" ng-src="./data/images/{{movie.imdbID}}.jpg"/>
       	  	<div class="small-12 medium-8 columns">
