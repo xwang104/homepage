@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Xiaoxiao Wang's homepage">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>IMDB top 250 movies</title>
+    <title>Xiaoxiao Wang</title>
 
     <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Angular Scripts -->
     <!-- NOTE: removing the ".min." can help debugging in the console-->
     <script src="./lib/angular/angular.min.js"></script>
@@ -17,17 +19,70 @@
 
 </head>
 
-<body ng-app="mp3" class="text-center">
-    <header class="text-center">
-        <h1>IMDB Top 250 Movie Directory</h1>
-        <div>
-          <a href="#/list"> Search </a>
-          <span>|</span>
-          <a href="#/gallery"> Gallery</a>
+<body ng-app="mp3">
+<!-- header -->
+  <header>
+    <div id="mobilenav-wrapper">
+      <div class="title-bar" data-responsive-toggle="responsive-topbar" data-hide-for="large">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+
+
+      <div class="top-bar hide-for-large" id="responsive-topbar">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text">Celebrating the Lantern Festival</li>
+          </ul>
         </div>
-    </header>
+
+        <div class="top-bar-right">
+          <ul class="vertical menu" data-magellan>
+            <li><a href="#part0">Home</a></li>
+            <li><a href="#part1">About</a></li>
+            <li><a href="#part2">Custom</a></li>
+            <li><a href="#part3">Interesing</a></li>
+            <li><a href="#part4"> More</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="show-for-large" data-sticky-container>
+      <div class="top-bar boxshadow" data-sticky data-options="marginTop:0;" id="nonresponsive-topbar">
+        <div class="top-bar-left">
+          <ul class="horizontal menu">
+            <li class="logo">Xiaoxiao Wang</li>
+          </ul>
+        </div>
+
+        <div class="top-bar-right">
+          <!--ul class="dropdown menu vertical large-horizontal" data-magellan data-dropdown-menu-->
+          <ul class="horizontal menu">
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/projects">Projects</a></li>
+            <li><a href="#/courses">Courses</a></li>
+            <li><a href="#part3">More</a></li>
+            <li><a href="./data/XiaoxiaoWang_CV.pdf">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+<!-- header -->
+
+
     <div ng-view></div>
 
+  <footer>
+    <div>
+      © 2017 Xiaoxiao Wang
+    </div>
+  
+  </footer>
     <!-- Scripts -->
     <script src="./lib/jquery-2.1.3.min/index.js"></script>
     <script src="./foundation6_lib/js/foundation.min.js"></script>
