@@ -1,7 +1,7 @@
-<div id="courses">
+<div id="courses" ng-controller="coursesCtrl">
     <div class="small-12 large-8 large-centered columns"> 
       <h3> Courses taken in UIUC </h3>
-      <table>
+      <!--table>
         <tr> <th> Course </th> <th> Title </th> <th> Grade </th></tr>
         <tr> <td> CS 512 </td> <td> Data Mining Principles </td> <td> ongoing </td></tr>
         <tr> <td> CS 543 </td> <td> Computer Vision </td> <td>  ongoing </td></tr>
@@ -22,6 +22,11 @@
         <tr> <td> PHYS 583 </td> <td> Advanced Field Theory </td> <td>  A </td></tr>
         <tr> <td> PHYS 582 </td> <td> General Field Theory </td> <td>  A+ </td></tr>
         <tr> <td> PHYS 569 </td> <td> Emergent States of Matter </td> <td>  A </td></tr>
+      </table-->
+
+      <table>
+        <tr> <th> Course </th> <th> Title </th> <th> Grade </th></tr>
+        <tr ng-repeat="course in data"> <td> {{course.course}} </td> <td> {{course.title}} </td> <td> {{course.grade}} </td></tr>
       </table>
 
     </div>

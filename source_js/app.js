@@ -7,9 +7,13 @@ app.config(function ($routeProvider) {
 		})
 		.when('/courses', {
 			templateUrl: './partials/courses.html',
+			controller: 'coursesCtrl',
+			controllerAs: 'courses'
 		})
 		.when('/projects', {
 			templateUrl: './partials/projects.html',
+			controller: 'projectsCtrl',
+			controllerAs: 'projects'
 		})
 		.when('/more', {
 			templateUrl: './partials/more.html',

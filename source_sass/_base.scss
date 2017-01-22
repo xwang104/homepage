@@ -61,6 +61,9 @@
     a:hover{
       color: $green;
     }
+    .active {
+      color: $dark-green;
+    }
   }
 
   #nonresponsive-topbar.shrink {
@@ -70,9 +73,6 @@
     }
     a {
       font-size: 1em;
-    }
-    .active {
-      color: black;
     }
     .top-bar-right, .top-bar-left {
       padding-top: 0em;
@@ -164,6 +164,59 @@
     }
   }
 
+  #projects {
+    padding: 4em 0em 2em 0em;
+    .projs {
+      padding: 2em;
+      margin-top: 2em;
+      border: 1px solid $dark-green;
+      background-color: #fff;
+    }
+    .proj {
+      padding-bottom: 0.5em;
+    }
+    .pname {
+      font-weight: 600;
+    }
+    .pteam {
+      float: right;
+    }
+    .ptime, .pteam {
+      padding: 0 1em 0 1em;
+    }
+    li {
+      list-style-type: square;
+    }
+    #top {
+      position: relative;
+      left: 85%;
+      font-size: 2em;
+      color: $dark-green;
+    }
+  }
+
+  #more {
+    padding-top: 3.9em;
+    ul {
+      margin-top: 2em;
+    }
+    li {
+      list-style-type: square;
+    }
+    span {
+      font-weight:600;
+      padding-right: 3em;
+    }
+    a {
+      color: $dark-green;
+      padding-left: 1em;
+      font-size: 1.1em;
+    }
+    a:hover{
+      color: $green;
+    }
+  }
+
 
 footer {
   padding: 4em;
@@ -171,10 +224,7 @@ footer {
   div {
     background: none;
     display: block;
-    i {
-      cursor: pointer;
-      padding:0 10px 10px 10px;
-    }
+    cursor: pointer;
   }
 }
 

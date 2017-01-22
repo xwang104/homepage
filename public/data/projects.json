@@ -1,0 +1,63 @@
+[
+    {
+        "name": "WSDM Cup 2017 Vandalism Detection",
+        "time": "2016",
+        "team": "Riberry Team",
+        "description": [
+            "This is our final project for the course CS 412 Introduction to Data Mining (http://www.wsdm-cup-2017.org/vandalism-detection.html)",
+            "We trained classifers using random forest and XGBoost models to detect Wikipedia Vandalism",
+            "I was responsible for analyzing and implementing new Wikidata revision features for classification. I also implemented aggregated feature appender in the client software pipeline.",
+            "Our result was ranked 5th place overall. (http://www.tira.io/task/vandalism-detection/)"
+        ]
+    },
+    {
+        "name": "K Framework format Print Mode",
+        "time": "2016",
+        "team": "KFC Team",
+        "description": [
+            "This is our final project for the course CS 427 Software Engineering I (http://www.kframework.org/index.php/Main_Page). We followed Extreme programming (XP) process for this project.",
+            "New print modes were added to K Framework so that user can specify display format of Abstract Syntax Trees in K",
+            "I implemented parsing user-defined format strings and processing K tokens in ASTs accordingly. I also designed and implemented pre-saved theme modes."
+        ]
+    },
+    {
+        "name": "Course Helper",
+        "time": "2016",
+        "team": "BEST Team",
+        "description": [
+            "This is our final project for the course CS 498RK Art and Science of Web Programming",
+            "It is a web application that let instructor users send new assignment notifications to each registered student, and student users will receive notifications from all courses they registered. Due dates will be automatically marked on students’ personal calendar.",  
+            "This project uses Foundation front-end framework and is built with MEAN stack.",
+            "I was the group leader, mainly responsible for the overall design, UX and UI design, RESTful API Design, database schema design, and implementation of front end."
+        ]
+    }, 
+    {
+        "name": "Promotion Digest",
+        "time": "2016",
+        "team": "with Shen Li",
+        "description": [
+            "This is our final project for the course CS 411 Text Information Systems.",
+            "It is a web application built to classify promotion emails in Gmail into categories, and users can search based on categories. By analyzing order receipt emails, it discovers users’ interests and recommends promotions accordingly",
+            "I trained promotion email classifier using NLTK language toolkit, retrieved and analyzed users order confirmation emails using NLTK and scikit-learn, and implemented the front-end. Shen Li was responsible for crawling user’s emails and back-end implementation.",
+            "Our project was scored 100."
+        ]
+    },
+    {
+        "name": "WOWDrobe: A Personal Online Closet",
+        "time": "2015-2016",
+        "team": "with Shen Li",
+        "description": [
+            "It is a web application built on Django web framework. It helps users organize their wardrobe by keeping track of the items they purchased. It also allows users to post their daily outfit",
+            "This is my personal project that I designed and developed the entire system from front-end to back-end."
+        ]
+    },
+    {
+        "name": "Personalized Twitter Stream Data Categorization",
+        "time": "2015",
+        "team": "HXYZ team",
+        "description": [
+            "This course project crawls tweets in real-time, applies a text categorization algorithm to assign each tweet a corresponding category (e.g. sports, technology, politics, etc.), and offers users personalized tweets based on their specified preferred categories.",
+            "I develop the front-end for this project."
+        ]
+    }
+]

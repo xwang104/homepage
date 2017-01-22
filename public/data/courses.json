@@ -1,0 +1,97 @@
+[
+    {
+        "course": "CS512",
+        "title": "Data Mining Principles",
+        "grade": "ongoing"
+    },
+    {
+        "course": "CS 543",
+        "title": "Computer Vision ",
+        "grade": "ongoing"
+    },        
+    {
+        "course": "CS 427",
+        "title": "Software Engineering I",
+        "grade": "A+"
+    },
+    {
+        "course": "CS 421",
+        "title": "Programming Languages and Compilers",
+        "grade": "A+"
+    },
+    {
+        "course": "CS 412",
+        "title": "Introduction to Data Mining",
+        "grade": "A+"
+    },
+    {
+        "course": "CS 225",
+        "title": "Data Structures",
+        "grade": "A+"
+    },
+    {
+        "course": "CS 498",
+        "title": "Art and Science of Web Programming",
+        "grade": "A"
+    },
+    {
+        "course": "CS 410",
+        "title": "Text Information Systems",
+        "grade": "A"
+    },
+    {
+        "course": "CS 411",
+        "title": "Database Systems",
+        "grade": "A+"
+    },
+    {
+        "course": "CS 598",
+        "title": "Sensing in Social Spaces",
+        "grade": "A"
+    },
+    {
+        "course": "CS 423",
+        "title": "Operating Systems Design",
+        "grade": "A+"
+    },
+    {
+        "course": "CS 498",
+        "title": "Theory II (Algorithm)",
+        "grade": "A-"
+    },
+    {
+        "course": "CS 450",
+        "title": "Numerical Analysis",
+        "grade": "A+"
+    },
+    {
+        "course": "CS 541",
+        "title": "Computer Systems Analysis",
+        "grade": "A"
+    },
+    {
+        "course": "PHYS 514",
+        "title": "Modern Atomic Physics",
+        "grade": "A+"
+    },
+    {
+        "course": "PHYS 563",
+        "title": "Phase Transitions",
+        "grade": "A+"
+    },
+    {
+        "course": "PHYS 583",
+        "title": "Advanced Field Theory",
+        "grade": "A"
+    },
+    {
+        "course": "PHYS 582",
+        "title": "General Field Theory",
+        "grade": "A+"
+    },
+    {
+        "course": "PHYS 569",
+        "title": "Emergent States of Matter",
+        "grade": "A"
+    }
+]

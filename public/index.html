@@ -59,11 +59,11 @@
 
         <div class="top-bar-right">
           <!--ul class="dropdown menu vertical large-horizontal" data-magellan data-dropdown-menu-->
-          <ul class="horizontal menu">
-            <li><a href="#/home">Home</a></li>
-            <li><a href="#/projects">Projects</a></li>
-            <li><a href="#/courses">Courses</a></li>
-            <li><a href="#part3">More</a></li>
+          <ul class="horizontal menu" ng-controller="NavigationCtrl">
+            <li><a href="#/home" ng-class="{ active: isCurrentPath('/home') }">Home</a></li>
+            <li><a href="#/projects" ng-class="{ active: isCurrentPath('/projects') }">Projects</a></li>
+            <li><a href="#/courses" ng-class="{ active: isCurrentPath('/courses') }">Courses</a></li>
+            <li><a href="#/more" ng-class="{ active: isCurrentPath('/more') }">More</a></li>
             <li><a href="./data/XiaoxiaoWang_CV.pdf">Resume</a></li>
           </ul>
         </div>

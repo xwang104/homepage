@@ -1,5 +1,12 @@
 <div id="projects">
   <div class="small-12 large-8 large-centered columns"> 
     <h3> Projects </h3>
+    <div ng-repeat="project in data" class="projs boxshadow">
+        <div class="proj"><span class="pname">{{project.name}}</span> <span class="ptime">({{project.time}})</span> <span class="pteam">{{project.team}}</span> </div>
+        <ul>
+          <li ng-repeat="line in project.description">{{line}} </li>
+        </ul>
+    </div>
   </div>
+  <a id="top" class="show-for-large"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
 </div>
