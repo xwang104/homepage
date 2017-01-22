@@ -12,12 +12,16 @@
   }
 
   #responsive-topbar {
-    background: red;
+    background: $dark-green;
+    ul {
+      background: none;
+    }
     li{
       border-bottom: 1px dotted rgba(255,255,255,0.25);;
     }
     a {
       color: #fff;
+      font-weight: 450;
     }
     .active {
       color: #000;
@@ -94,6 +98,9 @@
 
   #home {
     padding: 5em 2em 5em 3em;
+    @include breakpoint(medium down) {
+       padding: 5.5em 1em 5em 1em;
+    }
     #info {
       div {
         font-size: 1.08em;
@@ -104,7 +111,9 @@
       }
       #social {
         margin-top: 1.4em;
-        margin-right: 2.7em;
+        @include breakpoint(large only) {
+       	  margin-right: 2.7em;
+       	}
         height:3em;
         a {
           border: 1px solid #ccc;
@@ -121,6 +130,9 @@
           color: $green;
         }
       }
+      @include breakpoint(medium down) {
+        margin-top: 2em;
+      }
     }
     #photo {
       width: 70%;
@@ -136,6 +148,9 @@
   #background {
     background-color: #fff;
     padding: 4em 2em 4em 2em; 
+    @include breakpoint(medium down) {
+       padding: 4em 1em 4em 1em;
+    }
     .outul {
       padding: 1em;
     }
@@ -145,11 +160,20 @@
   }
 
   #courses {
+    @include breakpoint(medium only) {
+      min-height: 1120px;
+    }
+    @include breakpoint(small only) {
+      min-height: 1400px;
+    }
     background-image: url("../data/images/uiuc.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
-    padding: 5em;
+    padding: 5em 0 5em 0;
+    @include breakpoint(large only) {
+       padding: 5em;
+    }
     table {
       box-shadow: 0 0px 36px 1px #333;
       tbody {
@@ -166,6 +190,9 @@
 
   #projects {
     padding: 4em 0em 2em 0em;
+    @include breakpoint(medium down) {
+       padding-top: 5em;
+    }
     .projs {
       padding: 2em;
       margin-top: 2em;
@@ -197,6 +224,9 @@
 
   #more {
     padding-top: 3.9em;
+    @include breakpoint(medium down) {
+       padding: 5em 1em 3em 2em;
+    }
     ul {
       margin-top: 2em;
     }
@@ -225,6 +255,8 @@ footer {
     background: none;
     display: block;
     cursor: pointer;
+    color: #777;
+    text-shadow: #ccc 0.1em 0.1em 0.2em;
   }
 }
 

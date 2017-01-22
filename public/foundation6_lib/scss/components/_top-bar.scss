@@ -75,7 +75,7 @@ $topbar-input-width: 200px !default;
   }
 
   // Stack on small screens as default
-  @include breakpoint(small only) {
+  @include breakpoint(medium down) {
     @include top-bar-stacked;
   }
 

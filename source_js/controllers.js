@@ -29,7 +29,7 @@ app.controller('projectsCtrl', ['$scope', '$http', function($scope, $http) {
     //--------------------back to top----------------
 
     $("#top").click(function() {
-        $('html, body').animate({scrollTop: 0 }, 0);
+        $('html, body').animate({scrollTop: 0 }, 500);
         return false;
     });
 

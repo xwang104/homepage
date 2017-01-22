@@ -15,7 +15,7 @@
         "time": "2016",
         "team": "KFC Team",
         "description": [
-            "This is our final project for the course CS 427 Software Engineering I (http://www.kframework.org/index.php/Main_Page). We followed Extreme programming (XP) process for this project.",
+            "This is our final project for the course CS 427 Software Engineering I (http://www.kframework.org/index.php/). We followed Extreme programming (XP) process for this project.",
             "New print modes were added to K Framework so that user can specify display format of Abstract Syntax Trees in K",
             "I implemented parsing user-defined format strings and processing K tokens in ASTs accordingly. I also designed and implemented pre-saved theme modes."
         ]
@@ -45,7 +45,7 @@
     {
         "name": "WOWDrobe: A Personal Online Closet",
         "time": "2015-2016",
-        "team": "with Shen Li",
+        "team": "",
         "description": [
             "It is a web application built on Django web framework. It helps users organize their wardrobe by keeping track of the items they purchased. It also allows users to post their daily outfit",
             "This is my personal project that I designed and developed the entire system from front-end to back-end."

@@ -32,17 +32,17 @@
       <div class="top-bar hide-for-large" id="responsive-topbar">
         <div class="top-bar-left">
           <ul class="menu">
-            <li class="menu-text">Celebrating the Lantern Festival</li>
+            <li class="menu-text">Xiaoxiao Wang's Website</li>
           </ul>
         </div>
 
         <div class="top-bar-right">
-          <ul class="vertical menu" data-magellan>
-            <li><a href="#part0">Home</a></li>
-            <li><a href="#part1">About</a></li>
-            <li><a href="#part2">Custom</a></li>
-            <li><a href="#part3">Interesing</a></li>
-            <li><a href="#part4"> More</a></li>
+          <ul class="vertical menu" ng-controller="NavigationCtrl">
+            <li><a href="#/home" ng-class="{ active: isCurrentPath('/home') }">Home</a></li>
+            <li><a href="#/projects" ng-class="{ active: isCurrentPath('/projects') }">Projects</a></li>
+            <li><a href="#/courses" ng-class="{ active: isCurrentPath('/courses') }">Courses</a></li>
+            <li><a href="#/more" ng-class="{ active: isCurrentPath('/more') }">More</a></li>
+            <li><a href="./data/XiaoxiaoWang_CV.pdf">Resume</a></li>
           </ul>
         </div>
       </div>
